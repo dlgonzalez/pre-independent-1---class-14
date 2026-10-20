@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Independent 1 — Class 14 | Get Creative</title>
+<style>
+:root{--ink:#17223b;--muted:#64708b;--paper:#f6f8fc;--card:#fff;--line:#e1e7f0;--blue:#4257d6;--purple:#7955c9;--teal:#138a83;--yellow:#f4c95d;--coral:#f07d68;--shadow:0 12px 34px rgba(28,42,77,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hero{background:radial-gradient(circle at 88% 12%,#5969e8 0,transparent 30%),linear-gradient(130deg,#17223b,#292f68 65%,#473e91);color:#fff;padding:34px 20px 42px;overflow:hidden;position:relative}
+.wrap{max-width:1080px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:800;color:#d8ddff}.hero h1{font-size:clamp(2.2rem,6vw,4.3rem);line-height:1.02;margin:12px 0 14px;max-width:720px}.hero p{max-width:700px;color:#e8ebff;font-size:1.08rem;margin:0}.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:center}.hero-art{min-height:200px;display:flex;align-items:center;justify-content:center;position:relative}.orb{width:160px;height:160px;border-radius:50%;background:linear-gradient(145deg,#ffda73,#f58c72);display:flex;align-items:center;justify-content:center;font-size:5rem;box-shadow:0 15px 50px #10173670;transform:rotate(-8deg)}.float{position:absolute;background:#fff;color:var(--ink);padding:9px 13px;border-radius:13px;font-weight:800;box-shadow:var(--shadow)}.f1{top:12px;left:4%}.f2{right:0;top:45%}.f3{bottom:5px;left:10%}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.pill{border:1px solid #ffffff50;background:#ffffff12;padding:7px 11px;border-radius:999px;font-size:.86rem}
+main{padding:26px 18px 60px}.objectives{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;margin-top:-12px;position:relative}.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}h2{font-size:1.55rem;line-height:1.2;margin:0 0 10px}h3{font-size:1.1rem;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 18px}.objectives ul{padding-left:20px;margin:10px 0 0}.objectives li{margin:6px 0}.deliverable{background:#f0efff;border:1px solid #dedaff;border-radius:14px;padding:14px;margin-top:14px}.section{margin-top:34px;scroll-margin-top:20px}.section-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:15px}.num{flex:none;width:46px;height:46px;border-radius:14px;background:#e8eaff;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:1.1rem}.section-head p{margin:3px 0 0;color:var(--muted)}.transition{border-left:4px solid var(--yellow);background:#fff9e8;padding:12px 15px;border-radius:0 12px 12px 0;margin:14px 0 18px;color:#554624}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tile{border:1px solid var(--line);border-radius:15px;padding:15px;background:#fbfcff}.tag{display:inline-block;font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;font-weight:800;color:var(--purple);margin-bottom:6px}.step{display:flex;gap:10px;margin:9px 0}.step b{background:#eef0ff;color:var(--blue);width:25px;height:25px;display:grid;place-items:center;border-radius:50%;flex:none;font-size:.85rem}.phrase{background:#f0f8f7;border:1px solid #d6eeeb;border-radius:12px;padding:12px;margin:8px 0}.phrase strong{color:#08766f}.wordbank{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.word{padding:7px 10px;background:#eef0ff;border-radius:9px;font-weight:750;color:#343e9b}.pv{display:inline-block;background:#fff0c2;color:#6e4800;padding:1px 5px;border-radius:5px;font-weight:900;letter-spacing:.025em}.muted{color:var(--muted);font-size:.92rem}.prompt{font-weight:750;margin-bottom:6px}input[type=text],textarea,select{width:100%;border:1px solid #cbd4e3;border-radius:10px;padding:10px 12px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:80px;resize:vertical}label{font-weight:700;display:block;margin:9px 0 5px}.btn{border:0;border-radius:11px;background:var(--blue);color:#fff;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer}.btn:hover{filter:brightness(1.08)}.btn:disabled{opacity:.35;cursor:not-allowed}.btn.secondary{background:#e9ecff;color:#303eaa}.btn.teal{background:var(--teal)}.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.feedback{margin-top:10px;border-radius:10px;padding:10px 12px;background:#f0f8f7;color:#145d58;display:none}.feedback.show{display:block}.question{border:1px solid var(--line);padding:13px;border-radius:13px;margin:10px 0}.options{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.options button{border:1px solid #cbd4e3;background:#fff;border-radius:9px;padding:7px 12px;cursor:pointer;color:var(--ink);font:inherit}.options button.selected{background:#e8eaff;border-color:var(--blue)}.options button.correct{background:#e4f7ed;border-color:#48a877}.options button.wrong{background:#fff0ec;border-color:#e48b79}.star{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.star .tile{min-height:125px}.star .tile input{margin-top:8px}.appgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pitch{background:linear-gradient(120deg,#eef0ff,#f6efff);border-radius:16px;padding:17px}.timer{font-size:2rem;font-weight:900;letter-spacing:.03em}.divider{height:1px;background:var(--line);margin:18px 0}.nav{position:sticky;top:0;z-index:5;background:#fffF;border-bottom:1px solid var(--line);backdrop-filter:blur(10px);padding:9px 14px}.nav .wrap{display:flex;gap:8px;overflow-x:auto}.session-tab{white-space:nowrap;border:0;background:transparent;color:var(--muted);font-weight:800;font-size:.85rem;padding:9px 12px;border-radius:9px;cursor:pointer;font-family:inherit}.session-tab:hover,.session-tab.active{background:#e9ecff;color:var(--blue)}.session-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}.session-count{color:var(--muted);font-size:.9rem;font-weight:750}.footer{background:#17223b;color:#fff;padding:26px 18px}.footer p{color:#d6dcef;margin-bottom:0}.smallcaps{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:850;color:var(--muted)}.list{padding-left:20px}.list li{margin:5px 0}.audio-note{background:#fff7e6;border:1px solid #f2dfae;border-radius:12px;padding:13px}.checkrow{display:flex;gap:9px;align-items:flex-start;margin:9px 0}.checkrow input{margin-top:6px}
+@media(max-width:760px){.hero-grid,.objectives,.cols,.appgrid{grid-template-columns:1fr}.hero-art{min-height:175px}.orb{width:125px;height:125px;font-size:4rem}.three{grid-template-columns:1fr}.star{grid-template-columns:1fr 1fr}.hero{padding-top:27px}.panel,.card{padding:17px}}
+@media print{.nav,.btn,.hero-art{display:none}.hero{background:#fff;color:#111;padding:20px}.hero p,.eyebrow{color:#333}.panel,.card{box-shadow:none;break-inside:avoid}body{background:#fff}.section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">Pre-Independent 1 · Class 14</div>
+   <h1>GET<br>CREATIVE!</h1>
+   <p>Think outside the box. Explore creative ideas, solve a social media problem, and pitch an app that could make a difference.</p>
+   <div class="meta"><span class="pill">⏱ 120 minutes</span><span class="pill">💬 Speak · Listen · Collaborate</span><span class="pill">🚀 Final mission: App pitch</span></div>
+  </div>
+  <div class="hero-art" aria-label="Creative thinking illustration">
+   <span class="float f1">WHAT IF…?</span><div class="orb">💡</div><span class="float f2">NEW IDEAS</span><span class="float f3">THINK DIFFERENT</span>
+  </div>
+ </div>
+</header>
+<nav class="nav"><div class="wrap" id="sessionNav">
+<button class="session-tab active" data-session="goals">Overview</button>
+<button class="session-tab" data-session="warmup">1 · Warm-up</button>
+<button class="session-tab" data-session="phrasal">2 · Phrasal verbs</button>
+<button class="session-tab" data-session="listening">3 · Listening</button>
+<button class="session-tab" data-session="objects">4 · Creative talk</button>
+<button class="session-tab" data-session="social">5 · Social media</button>
+<button class="session-tab" data-session="app">6 · Design an app</button>
+<button class="session-tab" data-session="pitch">7 · Pitch</button>
+<button class="session-tab" data-session="exit">8 · Exit ticket</button>
+</div></nav>
+<main class="wrap">
+<section id="goals" class="objectives">
+ <div class="panel">
+  <div class="smallcaps">Your mission today</div><h2>By the end of class, you can…</h2>
+  <ul><li>share ideas and keep a conversation going in English;</li><li>use phrasal verbs to talk about ideas, choices and everyday actions;</li><li>identify problems connected to social media and suggest solutions;</li><li>ask and answer questions to develop an idea;</li><li>present a simple app idea and explain why it is useful.</li></ul>
+  <div class="deliverable"><strong>🎯 Your final product</strong><br>Work with a team to design an app that solves a social media problem. Then present your idea and answer questions from your classmates.</div>
+ </div>
+ <div class="panel">
+  <div class="smallcaps">How we'll work</div><h2>Your class roadmap</h2>
+  <p class="sub">You will think alone, compare ideas with a partner, work in a team, and present to the class.</p>
+  <div class="step"><b>1</b><div><strong>Think</strong><div class="muted">Generate ideas without worrying about having the “perfect” answer.</div></div></div>
+  <div class="step"><b>2</b><div><strong>Share</strong><div class="muted">Ask questions, listen to others, and build on their ideas.</div></div></div>
+  <div class="step"><b>3</b><div><strong>Design</strong><div class="muted">Choose a real problem and develop a useful solution.</div></div></div>
+  <div class="step"><b>4</b><div><strong>Pitch</strong><div class="muted">Explain your app and respond to questions.</div></div></div>
+ </div>
+</section>
+
+<section id="warmup" class="section">
+ <div class="section-head"><div class="num">01</div><div><h2>Warm-up · The Impossible Uses Challenge</h2><p>First, solve one together. Then your team gets a new object.</p></div></div>
+ <div class="transition">Let's warm up our creative brains! We'll start with a paper clip as a whole class. After that, you'll work in a small team with a different object, invent unusual uses, and present your best ideas. There isn't just one correct answer—but you must explain how your idea could work.</div>
+ <div class="cols">
+  <div class="card">
+   <div class="tag">Round 1 · Whole class · 3 minutes</div><h3>Model: the paper clip 📎</h3>
+   <div style="font-size:5rem;text-align:center;padding:4px">📎</div>
+   <p>Think beyond its usual job: holding papers together. Look at these examples, then add your own ideas with the teacher.</p>
+   <div class="three">
+    <div class="tile"><strong>🧷 Zipper pull</strong><p class="muted">Attach it to a broken zipper tab.</p></div>
+    <div class="tile"><strong>🎨 Mini sculpture</strong><p class="muted">Bend it into a small shape.</p></div>
+    <div class="tile"><strong>📱 SIM tool*</strong><p class="muted">A thin clip may help press a SIM tray button, if it fits safely.</p></div>
+   </div>
+   <p class="muted">*Only try this if the clip is suitable and your device instructions allow it. Never force it.</p>
+   <label for="classClipIdeas">Our class ideas</label><textarea id="classClipIdeas" placeholder="A paper clip could be used as…"></textarea>
+   <button class="btn secondary" onclick="feedbackIdeas('classClipIdeas','classClipFeedback')">Check our ideas</button><div class="feedback" id="classClipFeedback"></div>
+  </div>
+  <div class="card">
+   <div class="tag">Round 2 · Team challenge · 5 minutes</div><h3>Your team gets a different object</h3>
+   <p>Choose or receive one object. Work together to invent at least five uses. Choose ideas that are unusual but possible, and be ready to explain them.</p>
+   <div class="three">
+    <div class="tile"><div style="font-size:2.4rem">🥄</div><strong>A spoon</strong><p class="muted">Think beyond eating.</p><button class="btn secondary" onclick="setObject('A spoon')">Choose this</button></div>
+    <div class="tile"><div style="font-size:2.4rem">🧦</div><strong>A sock</strong><p class="muted">Think beyond wearing.</p><button class="btn secondary" onclick="setObject('A sock')">Choose this</button></div>
+    <div class="tile"><div style="font-size:2.4rem">📦</div><strong>A cardboard box</strong><p class="muted">Think beyond storage.</p><button class="btn secondary" onclick="setObject('A cardboard box')">Choose this</button></div>
+    <div class="tile"><div style="font-size:2.4rem">🪥</div><strong>A toothbrush</strong><p class="muted">Think beyond brushing teeth.</p><button class="btn secondary" onclick="setObject('A toothbrush')">Choose this</button></div>
+    <div class="tile"><div style="font-size:2.4rem">🧴</div><strong>An empty plastic bottle</strong><p class="muted">Think about reuse.</p><button class="btn secondary" onclick="setObject('An empty plastic bottle')">Choose this</button></div>
+    <div class="tile"><div style="font-size:2.4rem">📰</div><strong>A newspaper</strong><p class="muted">Think beyond reading.</p><button class="btn secondary" onclick="setObject('A newspaper')">Choose this</button></div>
+   </div>
+   <div class="deliverable"><strong>Your team's object:</strong> <span id="teamObject">Choose one above</span></div>
+   <label for="teamIdeas">Write your team's ideas (one per line)</label><textarea id="teamIdeas" placeholder="We could use it to…&#10;Another possible use is…"></textarea>
+   <button class="btn" onclick="feedbackIdeas('teamIdeas','teamIdeasFeedback')">Get feedback</button><div class="feedback" id="teamIdeasFeedback"></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Round 3 · Present to the class · 2 minutes per team</div><h3>Share your most creative ideas</h3>
+  <p>Choose your team's two best ideas. Explain what each one is used for and why it could work. Listen to other teams and give positive, specific feedback.</p>
+  <div class="cols">
+   <div><div class="phrase"><strong>Present your idea:</strong><br>“We came up with two unusual uses for…”<br>“First, you could use it to…”<br>“Another possibility is…”<br>“This could work because…”</div></div>
+   <div><div class="phrase"><strong>Respond to another team:</strong><br>“That's a clever idea because…”<br>“I hadn't thought of that!”<br>“Could it also be used to…?”<br>“Our favourite idea was… because…”</div></div>
+  </div>
+  <h3>What makes an idea creative?</h3>
+  <div class="checkrow"><input type="checkbox" id="w1"><label for="w1">It's different from the object's usual purpose.</label></div>
+  <div class="checkrow"><input type="checkbox" id="w2"><label for="w2">We can explain how it might work.</label></div>
+  <div class="checkrow"><input type="checkbox" id="w3"><label for="w3">We listened to and built on teammates' ideas.</label></div>
+  <div class="transition">Great work! You have practised generating ideas, explaining possibilities, and responding to other people. Next, you'll learn phrasal verbs that help you describe this kind of thinking and teamwork.</div>
+ </div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="phrasal" class="section">
+ <div class="section-head"><div class="num">02</div><div><h2>Phrasal Verb Challenge</h2><p>Understand the meaning, choose the right verb, and make it personal.</p></div></div>
+ <div class="card">
+  <div class="tag">Core vocabulary</div><h3>Six phrasal verbs from your lesson</h3>
+  <div class="cols">
+   <div class="tile"><strong>come up with</strong><p>think of or create an idea</p><em>“We came up with a new app idea.”</em></div>
+   <div class="tile"><strong>give up</strong><p>stop trying</p><em>“Don't give up after one mistake.”</em></div>
+   <div class="tile"><strong>look up</strong><p>search for information</p><em>“I'll look up the word online.”</em></div>
+   <div class="tile"><strong>make up</strong><p>invent a story, excuse or information</p><em>“He made up an excuse.”</em></div>
+   <div class="tile"><strong>rely on</strong><p>trust or depend on someone/something</p><em>“I rely on my team for support.”</em></div>
+   <div class="tile"><strong>take up</strong><p>start a hobby or regular activity</p><em>“I'd like to take up photography.”</em></div>
+  </div>
+  <div class="divider"></div>
+  <div class="tag">Extra useful language</div><h3>Four more expressions for creative conversations</h3>
+  <div class="wordbank"><span class="word">think of</span><span class="word">work out</span><span class="word">find out</span><span class="word">carry on</span></div>
+  <ul class="list"><li><strong>think of:</strong> produce an idea — “Can you think of a better name?”</li><li><strong>work out:</strong> find an answer or solution — “Let's work out how the app will help.”</li><li><strong>find out:</strong> discover information — “We need to find out what users need.”</li><li><strong>carry on:</strong> continue — “Carry on! I want to hear your idea.”</li></ul>
+  <p class="muted">Notice: some phrasal verbs have more than one meaning. Use the context to understand them.</p>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Interactive practice</div><h3>Choose the best phrasal verb</h3>
+  <div class="question" data-answer="look up" data-explain="Use look up when you search for information in a dictionary, book or online."><div class="prompt">1. You don't know what a word means, so you ______ it online.</div><div class="options"><button onclick="choose(this,'look up')">look up</button><button onclick="choose(this,'give up')">give up</button><button onclick="choose(this,'take up')">take up</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="come up with" data-explain="Come up with means to think of or create an idea."><div class="prompt">2. Our group needs to ______ a name for our app.</div><div class="options"><button onclick="choose(this,'make up')">make up</button><button onclick="choose(this,'come up with')">come up with</button><button onclick="choose(this,'rely on')">rely on</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="give up" data-explain="Give up means to stop trying. “Don't give up” is encouragement."><div class="prompt">3. The task is difficult, but don't ______!</div><div class="options"><button onclick="choose(this,'give up')">give up</button><button onclick="choose(this,'look up')">look up</button><button onclick="choose(this,'work out')">work out</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="rely on" data-explain="Rely on means trust or depend on someone or something."><div class="prompt">4. When I need advice, I ______ my best friend.</div><div class="options"><button onclick="choose(this,'take up')">take up</button><button onclick="choose(this,'rely on')">rely on</button><button onclick="choose(this,'carry on')">carry on</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="make up" data-explain="Make up can mean invent something, such as an excuse or a fictional story."><div class="prompt">5. Don't ______ a story. Tell us what really happened.</div><div class="options"><button onclick="choose(this,'find out')">find out</button><button onclick="choose(this,'make up')">make up</button><button onclick="choose(this,'think of')">think of</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="take up" data-explain="Take up means to start a new hobby or regular activity."><div class="prompt">6. I'm going to ______ tennis to get more exercise.</div><div class="options"><button onclick="choose(this,'take up')">take up</button><button onclick="choose(this,'work out')">work out</button><button onclick="choose(this,'give up')">give up</button></div><div class="feedback"></div></div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Make it yours</div><h3>Interview your partner</h3>
+  <p>Ask at least three questions. Listen carefully and ask one follow-up question.</p>
+  <ul class="list"><li>What helps you <strong class="pv">COME UP WITH</strong> ideas?</li><li>When do you feel like <strong class="pv">GIVING UP</strong>, and what helps you <strong class="pv">CARRY ON</strong>?</li><li>What information do you often <strong class="pv">LOOK UP</strong>?</li><li>Who do you <strong class="pv">RELY ON</strong> when you need help?</li><li>What hobby would you like to <strong class="pv">TAKE UP</strong>?</li><li>How can you <strong class="pv">FIND OUT</strong> if an online story is true?</li></ul>
+  <div class="phrase"><strong>Follow-up questions:</strong> “Why?” · “Can you give me an example?” · “How did you feel?” · “What happened next?”</div>
+  <div class="deliverable"><strong>🔦 Phrasal verb spotlight</strong><p>When you ask your partner a question, make the phrasal verb stand out. Stress the bold words and try to use the same expression in your answer.</p>
+   <div class="wordbank"><span class="word">COME UP WITH</span><span class="word">GIVE UP</span><span class="word">LOOK UP</span><span class="word">MAKE UP</span><span class="word">RELY ON</span><span class="word">TAKE UP</span><span class="word">CARRY ON</span><span class="word">FIND OUT</span></div>
+   <p><strong>Example:</strong> “What helps you <u>COME UP WITH</u> ideas?” — “I usually <u>RELY ON</u> my friends and <u>LOOK UP</u> examples online.”</p>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Bonus game · 2-minute rounds</div><h3>Phrasal Verb Power-Up</h3>
+  <p>Play with your partner. Choose the best expression for each situation. Each correct answer earns one point. Explain your choice to earn a bonus point.</p>
+  <div class="question" data-answer="work out" data-explain="Work out means to find a solution or understand how to do something."><div class="prompt">7. The app isn't working. Let's ______ how to fix it.</div><div class="options"><button onclick="choose(this,'work out')">work out</button><button onclick="choose(this,'take up')">take up</button><button onclick="choose(this,'make up')">make up</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="find out" data-explain="Find out means to discover information or learn a fact."><div class="prompt">8. Before we share the story, we should ______ if it's true.</div><div class="options"><button onclick="choose(this,'find out')">find out</button><button onclick="choose(this,'give up')">give up</button><button onclick="choose(this,'carry on')">carry on</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="carry on" data-explain="Carry on means continue doing something."><div class="prompt">9. Your idea is interesting. Please ______ explaining it.</div><div class="options"><button onclick="choose(this,'carry on')">carry on</button><button onclick="choose(this,'look up')">look up</button><button onclick="choose(this,'make up')">make up</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="think of" data-explain="Think of means to produce or remember an idea."><div class="prompt">10. Can you ______ a catchy name for our app?</div><div class="options"><button onclick="choose(this,'think of')">think of</button><button onclick="choose(this,'rely on')">rely on</button><button onclick="choose(this,'give up')">give up</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="make up" data-explain="Make up can mean invent a story or excuse, often one that is not true."><div class="prompt">11. Don't ______ facts to make your idea sound better.</div><div class="options"><button onclick="choose(this,'make up')">make up</button><button onclick="choose(this,'find out')">find out</button><button onclick="choose(this,'take up')">take up</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="rely on" data-explain="Rely on means trust or depend on a person or thing."><div class="prompt">12. During a group project, you need to ______ your teammates.</div><div class="options"><button onclick="choose(this,'rely on')">rely on</button><button onclick="choose(this,'look up')">look up</button><button onclick="choose(this,'take up')">take up</button></div><div class="feedback"></div></div>
+  <div class="phrase"><strong>Challenge:</strong> Choose any two phrasal verbs and create a mini-dialogue with your partner. Try to use both naturally.</div>
+ </div>
+ <div class="transition">You have practised language for ideas and persistence. Next, you'll listen to a talk about creativity. Before listening, make a prediction; while listening, focus on the speaker's main ideas—not every single word.</div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="listening" class="section">
+ <div class="section-head"><div class="num">03</div><div><h2>Listening · Creativity in Action</h2><p>Use the audio in your coursebook; this guide does not contain the recording.</p></div></div>
+ <div class="audio-note"><strong>🎧 Open your book to page 32.</strong><br>Play Track 3.04 for Part 1 and Track 3.05 for Part 2. Follow your teacher's instructions for replaying the tracks.</div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Before you listen · 3 minutes</div><h3>Agree or disagree?</h3><p>Choose your opinion first. Then explain it to a partner.</p>
+  <div class="question"><div class="prompt">1. Some people always find it easy to be creative.</div><div class="options"><button onclick="vote(this)">Agree</button><button onclick="vote(this)">Disagree</button><button onclick="vote(this)">Not sure</button></div></div>
+  <div class="question"><div class="prompt">2. Some people will never be creative.</div><div class="options"><button onclick="vote(this)">Agree</button><button onclick="vote(this)">Disagree</button><button onclick="vote(this)">Not sure</button></div></div>
+  <div class="question"><div class="prompt">3. Knowledge stops you from being creative.</div><div class="options"><button onclick="vote(this)">Agree</button><button onclick="vote(this)">Disagree</button><button onclick="vote(this)">Not sure</button></div></div>
+  <div class="question"><div class="prompt">4. Feeling like a new learner can help creativity.</div><div class="options"><button onclick="vote(this)">Agree</button><button onclick="vote(this)">Disagree</button><button onclick="vote(this)">Not sure</button></div></div>
+  <div class="phrase"><strong>Useful language:</strong><br>“I think this is true because…” · “I'm not sure, but…” · “I see your point. However, …”</div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">While listening · Track 3.04</div><h3>Check the speaker's ideas</h3><p>Listen to Part 1. Choose True or False according to the talk. Then check your answers with your partner.</p>
+  <div class="question" data-listening="true"><div class="prompt">1. Some people always find it easy to be creative.</div><div class="options"><button onclick="vote(this)">True</button><button onclick="vote(this)">False</button></div><div class="feedback"></div></div>
+  <div class="question" data-listening="true"><div class="prompt">2. Some people will never be creative.</div><div class="options"><button onclick="vote(this)">True</button><button onclick="vote(this)">False</button></div><div class="feedback"></div></div>
+  <div class="question" data-listening="true"><div class="prompt">3. Knowledge stops you from being creative.</div><div class="options"><button onclick="vote(this)">True</button><button onclick="vote(this)">False</button></div><div class="feedback"></div></div>
+  <div class="question" data-listening="true"><div class="prompt">4. Feeling like a new learner helps creativity.</div><div class="options"><button onclick="vote(this)">True</button><button onclick="vote(this)">False</button></div><div class="feedback"></div></div>
+  <p class="muted">After listening, compare your choices with the recording and your classmates. The page does not mark these answers automatically because the coursebook audio is the source of truth.</p>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">While listening · Track 3.05</div><h3>Catch the three exercises</h3><p>Listen to Part 2. Write short notes about each creative exercise the speaker describes. Don't try to write every word.</p>
+  <label for="ex1">Exercise 1 — What do you do?</label><textarea id="ex1" placeholder="Write key words or short notes…"></textarea>
+  <label for="ex2">Exercise 2 — What do you do?</label><textarea id="ex2" placeholder="Write key words or short notes…"></textarea>
+  <label for="ex3">Exercise 3 — What do you do?</label><textarea id="ex3" placeholder="Write key words or short notes…"></textarea>
+  <div class="phrase"><strong>After listening:</strong> “I think Exercise ___ would be useful because…” · “I'd like to try it when…”</div>
+ </div>
+ <div class="transition">The talk has given you ideas about creative thinking. Now let's practise two ways to use it: inventing unusual uses for objects and finding surprising connections between things.</div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="objects" class="section">
+ <div class="section-head"><div class="num">04</div><div><h2>Creative Talk · Yes, and…!</h2><p>Build on ideas instead of repeating the warm-up.</p></div></div>
+ <div class="transition">You've already explored unusual uses for objects. This time, you'll practise a different creativity skill: accepting a teammate's idea and adding something new. In real conversations, collaboration often makes an idea stronger.</div>
+ <div class="cols">
+  <div class="card">
+   <div class="tag">Round 1 · Learn the move</div><h3>Don't block the idea—build on it</h3>
+   <div class="tile"><p><strong>A:</strong> “Let's create an app that helps people spend less time online.”</p><p><strong>B:</strong> “Yes, and it could suggest a five-minute offline activity.”</p><p><strong>A:</strong> “Yes, and users could invite a friend to join them.”</p></div>
+   <p class="muted">The phrase “Yes, and…” doesn't mean you must agree with everything. It means you first show that you've listened, then add a useful possibility.</p>
+   <div class="phrase"><strong>Try these:</strong><br>“Yes, and we could…”<br>“That's interesting. We could also…”<br>“Building on your idea…”<br>“What if we added…?”</div>
+  </div>
+  <div class="card">
+   <div class="tag">Round 2 · Team improvisation · 5 minutes</div><h3>Pick a challenge</h3>
+   <p>Choose one situation. Take turns adding one sentence to develop a solution. Every new sentence must build on the previous idea.</p>
+   <div class="question"><strong>Challenge A:</strong> Your class wants to help students stop checking their phones during homework.</div>
+   <div class="question"><strong>Challenge B:</strong> Your school wants to help students identify fake news.</div>
+   <div class="question"><strong>Challenge C:</strong> A new student is being treated unkindly in a class group chat.</div>
+   <label for="improv">Write your team's chain of ideas</label><textarea id="improv" placeholder="A: We could…&#10;B: Yes, and…&#10;C: That's interesting. We could also…"></textarea>
+   <button class="btn" onclick="feedbackImprov()">Check our collaboration</button><div class="feedback" id="improvFeedback"></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Round 3 · Share and reflect</div><h3>Which idea became stronger?</h3>
+  <p>Present your team's solution in 30 seconds. Then tell the class which teammate's addition helped the idea most and why.</p>
+  <div class="phrase"><strong>Useful reflection:</strong><br>“Our first idea was…” · “Then we added…” · “The idea became better because…” · “We relied on each other to…”</div>
+ </div>
+ <div class="transition">You've now practised building on other people's ideas. Let's apply that skill to the social media problems in your coursebook and then develop one idea into a complete app proposal.</div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="social" class="section">
+ <div class="section-head"><div class="num">05</div><div><h2>Social Media Problem Detectives</h2><p>Read, identify a problem, and discuss its impact.</p></div></div>
+ <div class="card">
+  <div class="tag">Read · Coursebook page 34</div><h3>The Trouble With Social Media</h3>
+  <p>Read the article in your book. Find the five issues below and match each one to the correct description.</p>
+  <div class="question" data-answer="Confirmation bias" data-explain="Confirmation bias means accepting information more easily when it agrees with what we already believe."><div class="prompt">1. You mainly trust posts that agree with your existing opinions.</div><div class="options"><button onclick="choose(this,'Confirmation bias')">Confirmation bias</button><button onclick="choose(this,'Cyberbullying')">Cyberbullying</button><button onclick="choose(this,'Digital footprint')">Digital footprint</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="Excessive use" data-explain="Excessive use means spending so much time online that it affects other activities or relationships."><div class="prompt">2. You check your phone constantly and ignore friends around you.</div><div class="options"><button onclick="choose(this,'Excessive use')">Excessive use</button><button onclick="choose(this,'Confirmation bias')">Confirmation bias</button><button onclick="choose(this,'Privacy risk')">Privacy risk</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="Cyberbullying" data-explain="Cyberbullying involves harmful or unkind behaviour towards someone online."><div class="prompt">3. People post cruel comments about another person.</div><div class="options"><button onclick="choose(this,'Digital footprint')">Digital footprint</button><button onclick="choose(this,'Cyberbullying')">Cyberbullying</button><button onclick="choose(this,'Excessive use')">Excessive use</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="Digital footprint" data-explain="Your digital footprint is the record you leave online when you post, share or comment."><div class="prompt">4. A future employer finds old posts you forgot about.</div><div class="options"><button onclick="choose(this,'Privacy risk')">Privacy risk</button><button onclick="choose(this,'Digital footprint')">Digital footprint</button><button onclick="choose(this,'Confirmation bias')">Confirmation bias</button></div><div class="feedback"></div></div>
+  <div class="question" data-answer="Privacy risk" data-explain="Sharing your location or travel plans publicly can reveal information that puts your safety or privacy at risk."><div class="prompt">5. Someone shares their live location and announces that their home is empty.</div><div class="options"><button onclick="choose(this,'Cyberbullying')">Cyberbullying</button><button onclick="choose(this,'Privacy risk')">Privacy risk</button><button onclick="choose(this,'Excessive use')">Excessive use</button></div><div class="feedback"></div></div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Talk with your group</div><h3>Which problem needs a solution first?</h3>
+  <p>Choose one problem. Explain why it matters and suggest one way to reduce the risk. You do not need to share private personal experiences.</p>
+  <div class="phrase"><strong>Useful language:</strong><br>“One serious problem is…” · “It can affect people because…” · “People could…” · “An app might help by…”</div>
+  <label for="chosenProblem">Our chosen problem</label><select id="chosenProblem"><option>Confirmation bias / false information</option><option>Spending too much time online</option><option>Anxiety about likes and shares</option><option>Cyberbullying</option><option>Digital footprint and privacy</option></select>
+  <label for="problemReason">Why is it important?</label><textarea id="problemReason" placeholder="We chose this problem because…"></textarea>
+ </div>
+ <div class="transition">Your team has identified a problem. Now imagine a company has asked you to create an app to help. You'll develop your idea using a method called starbursting: asking six kinds of questions before deciding how your app should work.</div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="app" class="section">
+ <div class="section-head"><div class="num">06</div><div><h2>Design Your App · Starbursting Studio</h2><p>Brainstorm, ask better questions, and build a practical solution.</p></div></div>
+ <div class="card">
+  <div class="tag">Step 1 · Think alone, then share</div><h3>Invent an app</h3>
+  <p>Your company wants an app that helps people deal with social media problems. Your app can check information, protect privacy, manage screen time, support people experiencing cyberbullying, or solve another problem.</p>
+  <div class="appgrid">
+   <div><label for="appName">App name</label><input id="appName" type="text" placeholder="e.g. SafeScroll"></div>
+   <div><label for="appProblem">What problem does it solve?</label><input id="appProblem" type="text" placeholder="e.g. false information"></div>
+   <div><label for="appUsers">Who will use it?</label><input id="appUsers" type="text" placeholder="e.g. teenagers and families"></div>
+   <div><label for="appFunction">What does it do?</label><input id="appFunction" type="text" placeholder="e.g. checks suspicious stories"></div>
+  </div>
+  <label for="appBenefit">Why will it be useful?</label><textarea id="appBenefit" placeholder="It will be useful because…"></textarea>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Step 2 · Starbursting</div><h3>Ask six questions about your app</h3>
+  <p>Write a question or a short answer for each point. Then discuss your answers with your group. Use “What, Who, Where, When, How, Why” to add detail.</p>
+  <div class="star">
+   <div class="tile"><strong>👥 WHO?</strong><p class="muted">Who will use it? Who can benefit?</p><input id="starWho" type="text" placeholder="Our users are…"></div>
+   <div class="tile"><strong>❓ WHAT?</strong><p class="muted">What does it do? What problem does it solve?</p><input id="starWhat" type="text" placeholder="It helps people…"></div>
+   <div class="tile"><strong>📍 WHERE?</strong><p class="muted">Where can people use it?</p><input id="starWhere" type="text" placeholder="People can use it…"></div>
+   <div class="tile"><strong>🕒 WHEN?</strong><p class="muted">When would people need it?</p><input id="starWhen" type="text" placeholder="They need it when…"></div>
+   <div class="tile"><strong>⚙️ HOW?</strong><p class="muted">How does it work?</p><input id="starHow" type="text" placeholder="It works by…"></div>
+   <div class="tile"><strong>💡 WHY?</strong><p class="muted">Why is it important or better?</p><input id="starWhy" type="text" placeholder="It is useful because…"></div>
+  </div>
+  <div class="phrase"><strong>Team discussion language:</strong><br>“What if we…?” · “Could we also…?” · “I like that idea because…” · “I see your point, but…” · “Let's choose this idea because…”</div>
+ </div>
+ <div class="card" style="margin-top:14px">
+  <div class="tag">Step 3 · Decide and improve</div><h3>Choose your team's best idea</h3>
+  <p>Compare the ideas. Choose one that is useful, easy to understand, and realistic enough to develop. Improve it using a suggestion from another team member.</p>
+  <div class="checkrow"><input type="checkbox" id="c1"><label for="c1">Our app solves a clear problem.</label></div>
+  <div class="checkrow"><input type="checkbox" id="c2"><label for="c2">We can explain how it works.</label></div>
+  <div class="checkrow"><input type="checkbox" id="c3"><label for="c3">We know who would use it and why.</label></div>
+  <div class="checkrow"><input type="checkbox" id="c4"><label for="c4">Everyone in the group has contributed.</label></div>
+ </div>
+ <div class="transition">Your app idea is ready. Now prepare a short pitch: explain the problem, show how your app works, and convince the class that it could help. Remember, a good pitch is clear—not complicated.</div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="pitch" class="section">
+ <div class="section-head"><div class="num">07</div><div><h2>Final Pitch · Present Your Solution</h2><p>Tell the class about your app and answer their questions.</p></div></div>
+ <div class="cols">
+  <div class="card">
+   <div class="tag">Your 2-minute pitch</div><h3>Use this structure</h3>
+   <ol class="list"><li><strong>The problem:</strong> “One problem with social media is…”</li><li><strong>The app:</strong> “Our app is called…”</li><li><strong>The users:</strong> “It is designed for…”</li><li><strong>How it works:</strong> “It helps by…”</li><li><strong>The benefit:</strong> “We think it is useful because…”</li></ol>
+   <div class="pitch"><strong>Opening example</strong><p>“Have you ever seen a story online and wondered if it was true? Our app, FactFriend, helps users check suspicious stories before sharing them.”</p></div>
+  </div>
+  <div class="card">
+   <div class="tag">Audience role</div><h3>Ask one useful question</h3>
+   <p>While another team presents, listen and prepare a question. Be curious and respectful.</p>
+   <div class="phrase">“Who is your app designed for?”</div><div class="phrase">“How does it work?”</div><div class="phrase">“Why would people use it?”</div><div class="phrase">“What makes it different?”</div>
+   <h3 style="margin-top:18px">Quick self-check</h3>
+   <div class="checkrow"><input type="checkbox" id="p1"><label for="p1">I explained the problem and our solution.</label></div>
+   <div class="checkrow"><input type="checkbox" id="p2"><label for="p2">I used examples or reasons.</label></div>
+   <div class="checkrow"><input type="checkbox" id="p3"><label for="p3">I listened and responded to questions.</label></div>
+  </div>
+ </div>
+
+<div class="session-controls">
+ <button class="btn secondary prev-session" type="button">← Previous session</button>
+ <span class="session-count">Session <span class="current-session-number">1</span> of 8</span>
+ <button class="btn next-session" type="button">Next session →</button>
+</div>
+</section>
+
+<section id="exit" class="section">
+ <div class="section-head"><div class="num">08</div><div><h2>Wrap-up · Exit Ticket</h2><p>Before you leave, reflect on what you can do now.</p></div></div>
+ <div class="card">
+  <div class="tag">Complete the sentences</div>
+  <label for="exitVerb">One phrasal verb I can use in real life is…</label><input id="exitVerb" type="text" placeholder="I can use…">
+  <label for="exitTechnique">One creative technique I tried today was…</label><input id="exitTechnique" type="text" placeholder="I tried…">
+  <label for="exitImprove">One thing I would improve about our app is…</label><textarea id="exitImprove" placeholder="I would improve…"></textarea>
+  <div class="btn-row"><button class="btn teal" onclick="showExit()">Finish my reflection</button><button class="btn secondary" onclick="window.print()">Print / Save as PDF</button></div>
+  <div class="feedback" id="exitFeedback"></div>
+ </div>
+<div class="session-controls"><button class="btn secondary prev-session" type="button">← Previous session</button><span class="session-count">Session <span class="current-session-number">8</span> of 8</span><button class="btn next-session" type="button">Back to overview</button></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap"><div class="eyebrow">Pre-Independent 1 · Class 14</div><h2>Think creatively. Communicate clearly. Build something useful.</h2><p>Move through one session at a time. Use the original coursebook and audio tracks for the listening tasks, and use English to share and develop your ideas.</p></div></footer>
+<script>
+function countUses(){const t=document.getElementById('uses').value.trim();const n=t?t.split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean).length:0;document.getElementById('useCount').textContent=n+' idea'+(n===1?'':'s');const f=document.getElementById('usesFeedback');f.textContent=n>=5?'Great! You have at least five ideas. Now compare your most unusual idea with a partner.':'Keep going! Try to write at least five different ideas. Think about art, fixing things, games, or everyday problems.';f.classList.add('show')}
+function choose(btn,value){const q=btn.closest('.question');if(!q)return;const ans=q.dataset.answer;const fb=q.querySelector('.feedback');q.querySelectorAll('button').forEach(b=>{b.classList.remove('selected','correct','wrong');b.disabled=false});if(q.dataset.listening==='true'){btn.classList.add('selected');fb.textContent='You chose '+value+'. Check this answer against the original audio on page 32, then compare evidence with your partner. The recording—not this guide—is your answer key.';fb.classList.add('show');return;}btn.classList.add(value===ans?'correct':'wrong');q.querySelectorAll('button').forEach(b=>{if(b.textContent.trim()===ans)b.classList.add('correct')});fb.textContent=(value===ans?'Correct! ':'Not quite. The best answer is “'+ans+'”. ')+(q.dataset.explain||'Review the context and try to explain your choice.');fb.classList.add('show')}
+function vote(btn){btn.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected')}
+function suggestConnection(){const a=document.getElementById('objA').value,b=document.getElementById('objB').value;const tips=['They can both be used by people.','They can both be part of a hobby.','They both have parts you can touch.','You might see both at home or at school.','They can both help someone do something.'];let text='Try this starter: “A '+a+' and a '+b+' can both…” Then add a specific detail. '+tips[Math.floor(Math.random()*tips.length)];const f=document.getElementById('connectionHint');f.textContent=text;f.classList.add('show')}
+function showExit(){const vals=['exitVerb','exitTechnique','exitImprove'].map(id=>document.getElementById(id).value.trim());const f=document.getElementById('exitFeedback');if(vals.some(v=>!v)){f.textContent='Complete all three reflections before you finish. Short answers are fine.'}else{f.textContent='Nice work! You reflected on vocabulary, creative thinking, and your app idea. Share your answers with your teacher or save this page for your notes.'}f.classList.add('show')}
+
+function feedbackIdeas(inputId,feedbackId){
+ const raw=document.getElementById(inputId).value.trim();
+ const ideas=raw.split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean);
+ const f=document.getElementById(feedbackId);
+ const count=ideas.length;
+ let msg='';
+ if(count===0){msg='Add your ideas first. Try starting with “You could use it to…” or “It could become…”';}
+ else if(count<3){msg='You have '+count+' idea'+(count===1?'':'s')+'. Keep going: try to find at least five different uses. Think about solving a problem, making something, organising, or playing a game.';}
+ else if(count<5){msg='Good start — '+count+' ideas! Try to add '+(5-count)+' more. Check: are they different from the usual purpose of the object? Can you explain how they might work?';}
+ else {msg='Great work — '+count+' ideas! Now choose your two most original ideas. For each one, explain how it works and why it could be useful. A creative idea should be unusual and explainable.';}
+ f.textContent=msg;f.classList.add('show');
+}
+function setObject(name){document.getElementById('teamObject').textContent=name;document.getElementById('teamIdeas').placeholder='Our '+name.toLowerCase()+' could be used to…\nAnother possible use is…';}
+function feedbackImprov(){
+ const t=document.getElementById('improv').value.trim();
+ const f=document.getElementById('improvFeedback');
+ const turns=t.split(/\n+/).map(x=>x.trim()).filter(Boolean);
+ const hasBuild=/yes, and|could also|building on|what if/i.test(t);
+ if(turns.length<3){f.textContent='Add at least three turns so everyone can contribute. Each person should add a new detail.';}
+ else if(!hasBuild){f.textContent='You have several turns. Try using “Yes, and…”, “We could also…”, or “What if…?” to show how each idea builds on the previous one.';}
+ else{f.textContent='Nice collaboration! You have a chain of ideas. Choose the most practical addition and explain why it improves the solution.';}
+ f.classList.add('show');
+}
+const sessionIds=['goals','warmup','phrasal','listening','objects','social','app','pitch','exit'];
+const sessionLabels=['Overview','Warm-up','Phrasal verbs','Listening','Creative talk','Social media','Design an app','Pitch','Exit ticket'];
+function showSession(id){
+ const selected=sessionIds.indexOf(id);
+ document.querySelectorAll('main > .section').forEach(s=>s.style.display=(s.id===id?'block':'none'));
+ document.getElementById('goals').style.display=(id==='goals'?'grid':'none');
+ document.querySelectorAll('.session-tab').forEach(b=>b.classList.toggle('active',b.dataset.session===id));
+ document.querySelectorAll('.session-controls').forEach(c=>{
+   const section=c.closest('.section');const idx=sessionIds.indexOf(section.id);
+   c.querySelector('.current-session-number').textContent=idx;
+   c.querySelector('.prev-session').disabled=idx<=1;
+   c.querySelector('.next-session').textContent=idx>=8?'Back to overview':'Next session →';
+ });
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.session-tab').forEach(b=>b.addEventListener('click',()=>showSession(b.dataset.session)));
+document.querySelectorAll('.prev-session').forEach(b=>b.addEventListener('click',()=>{const id=b.closest('.section').id;const i=sessionIds.indexOf(id);showSession(sessionIds[Math.max(0,i-1)]);}));
+document.querySelectorAll('.next-session').forEach(b=>b.addEventListener('click',()=>{const id=b.closest('.section').id;const i=sessionIds.indexOf(id);showSession(sessionIds[i>=8?0:i+1]);}));
+showSession('goals');
+
+</script>
+</body>
+</html>
